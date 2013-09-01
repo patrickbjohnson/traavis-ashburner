@@ -582,13 +582,22 @@ input[type="text"], select, textarea {
 .thumbnail {
 	border: 0;
 	padding: 0;
+	height: 180px;
+	overflow: hidden;
 	text-align: center;
 	box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-ms-box-shadow: none;
 	-o-box-shadow: none;
 }
+
 
 .thumbnail h4 {
 	color: #4d90fe;
@@ -612,6 +621,15 @@ input[type="text"], select, textarea {
 	padding: 20px;
 	margin: 0;
 }
+
+@media (max-width: 1000px) {
+	.thumbnail {
+	height: 125px;
+	}
+}
+
+
+
 
 /* ==== Team ==== */
 
@@ -670,10 +688,12 @@ p.copyright {
 p.agency {
 	float: right;
 	color: #CECFD1;
+	font-size: .750rem;
 }
 
 p.agency a {
 	color: #CECFD1;
+	font-size: .750rem;
 }
 
 
@@ -792,10 +812,22 @@ p.agency a {
 	text-align: center; 
 }
 
+.social ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.social li {
+	display: inline-block;
+	padding: 5px;
+	margin: 0;
+}
 .social li a {
-	margin: 50px auto;
+	margin: 0 25px;
 	font-size: 2em;
 	color: #fff;
+	padding: 0;
 }
 
 .social a:hover {
